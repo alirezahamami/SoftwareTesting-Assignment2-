@@ -9,7 +9,4 @@ describe('Test Express app root endpoint', () => {
   });
  
 });
-afterAll(async () => {
-	await new Promise(resolve => setTimeout(() => resolve(), 500)); // avoid jest open handle error
-});
 
