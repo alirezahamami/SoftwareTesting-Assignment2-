@@ -7,4 +7,9 @@ describe('Test Express app root endpoint', () => {
     expect(response.status).toBe(200);
     expect(response.text).toBe('this is respond from server');
   });
+ 
 });
+afterAll(async () => {
+	await new Promise(resolve => setTimeout(() => resolve(), 500)); // avoid jest open handle error
+});
+
