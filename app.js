@@ -4,10 +4,6 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.send("this is respond from server")
-
-
-    console.log(req.headers)
-    console.log(req.method)
 })
 
 app.get('/person/:name', (req, res) => {
@@ -31,3 +27,5 @@ app.get('/html', (req, res) => {
 app.get('/information', (req, res) => res.send("this is information !"))
 
 app.listen(3000, () => console.log('listen is started on port 3000 !'))
+
+module.exports = app;
